@@ -15,7 +15,23 @@ export const TESTIMONIALS = [
 ];
 
 export const ACTIVITIES = [
-  { id: 1, title: 'Réunion Officielle WhatsApp', date: 'Samedi 6 Juin 2026 à 23H00', description: 'Ordre du jour : 🔸 Fixer une fréquence de réunion (15 jours ou 1 mois) pour faire l\'état des lieux. 🔸 Transition de groupe vers une association formelle et recherche de fonds à long terme. 🔸 Élection du bureau (Secrétariat, Vice-présidents, Comité disciplinaire).', image: 'assets/images/reunion.png', isUpcoming: true },
+  {
+    id: 1,
+    title: 'Réunion Officielle WhatsApp',
+    date: 'Samedi 6 Juin 2026 à 23H00',
+    description: 'Grande réunion sur le groupe WhatsApp officiel pour structurer notre association et élire notre bureau.',
+    image: 'assets/images/reunion.png',
+    isUpcoming: true,
+    location: 'Groupe WhatsApp Officiel',
+    attendeeCount: 0,
+    agenda: [
+      { icon: '📅', point: 'Fixer une fréquence de réunion régulière (tous les 15 jours ou 1 mois) pour faire l\'état des lieux et discuter de sujets divers.' },
+      { icon: '🏛️', point: 'Transition officielle : passer du simple groupe WhatsApp à une Association reconnue et structurée.' },
+      { icon: '💰', point: 'Réfléchir aux sources de financement à long terme pour soutenir les projets de l\'association.' },
+      { icon: '🗳️', point: 'Élection des membres du bureau : Secrétariat, Vice-Président(e)s et Comité Disciplinaire.' },
+      { icon: '📜', point: 'Mise en place du règlement intérieur pour organiser et structurer la vie de l\'association.' },
+    ]
+  },
 ];
 
 export const STATS = [
