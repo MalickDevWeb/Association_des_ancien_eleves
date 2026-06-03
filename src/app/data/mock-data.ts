@@ -15,7 +15,7 @@ export const TESTIMONIALS = [
 ];
 
 export const ACTIVITIES = [
-  { id: 1, title: 'Réunion Officielle WhatsApp', date: 'Samedi 6 Juin 2026 à 23H00', description: 'Ordre du jour : Réorganisation du groupe WhatsApp, mise en place du règlement intérieur et échanges sur les perspectives de l\'association.', image: 'assets/images/reunion.png', isUpcoming: true },
+  { id: 1, title: 'Réunion Officielle WhatsApp', date: 'Samedi 6 Juin 2026 à 23H00', description: 'Ordre du jour : 🔸 Fixer une fréquence de réunion (15 jours ou 1 mois) pour faire l\'état des lieux. 🔸 Transition de groupe vers une association formelle et recherche de fonds à long terme. 🔸 Élection du bureau (Secrétariat, Vice-présidents, Comité disciplinaire).', image: 'assets/images/reunion.png', isUpcoming: true },
 ];
 
 export const STATS = [
