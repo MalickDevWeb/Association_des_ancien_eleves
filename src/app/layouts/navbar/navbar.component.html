@@ -2,7 +2,7 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between h-[90px]">
       <div class="flex items-center">
-        <a routerLink="/accueil" class="flex-shrink-0 flex items-center gap-3">
+        <a routerLink="/" class="flex-shrink-0 flex items-center gap-3">
           <img src="assets/images/logo.png" alt="Logo AEMT" class="h-[85px] w-auto object-contain mix-blend-multiply -ml-2">
           <span class="font-bold text-lg text-primary hidden sm:block">Anciens Élèves EMT</span>
         </a>
@@ -10,7 +10,7 @@
 
       <!-- Desktop menu -->
       <div class="hidden lg:flex lg:items-center lg:space-x-4">
-        <a routerLink="/accueil" routerLinkActive="text-primary font-semibold" [routerLinkActiveOptions]="{exact: true}" class="text-textSecondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Accueil</a>
+        <a routerLink="/" routerLinkActive="text-primary font-semibold" [routerLinkActiveOptions]="{exact: true}" class="text-textSecondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Accueil</a>
         <a routerLink="/a-propos" routerLinkActive="text-primary font-semibold" class="text-textSecondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">À propos</a>
         <a routerLink="/organisation" routerLinkActive="text-primary font-semibold" class="text-textSecondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Organisation</a>
         <a routerLink="/membres" routerLinkActive="text-primary font-semibold" class="text-textSecondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Membres</a>
@@ -44,7 +44,7 @@
   @if (isMenuOpen()) {
     <div class="lg:hidden bg-white border-t border-borderLight shadow-lg absolute w-full left-0" id="mobile-menu">
       <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-        <a (click)="closeMenu()" routerLink="/accueil" routerLinkActive="bg-secondary text-primary font-semibold" [routerLinkActiveOptions]="{exact: true}" class="text-textSecondary hover:text-primary hover:bg-secondary block px-3 py-2 rounded-md text-base transition-colors">Accueil</a>
+        <a (click)="closeMenu()" routerLink="/" routerLinkActive="bg-secondary text-primary font-semibold" [routerLinkActiveOptions]="{exact: true}" class="text-textSecondary hover:text-primary hover:bg-secondary block px-3 py-2 rounded-md text-base transition-colors">Accueil</a>
         <a (click)="closeMenu()" routerLink="/a-propos" routerLinkActive="bg-secondary text-primary font-semibold" class="text-textSecondary hover:text-primary hover:bg-secondary block px-3 py-2 rounded-md text-base transition-colors">À propos</a>
         <a (click)="closeMenu()" routerLink="/organisation" routerLinkActive="bg-secondary text-primary font-semibold" class="text-textSecondary hover:text-primary hover:bg-secondary block px-3 py-2 rounded-md text-base transition-colors">Organisation</a>
         <a (click)="closeMenu()" routerLink="/membres" routerLinkActive="bg-secondary text-primary font-semibold" class="text-textSecondary hover:text-primary hover:bg-secondary block px-3 py-2 rounded-md text-base transition-colors">Membres</a>
