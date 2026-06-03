@@ -1,0 +1,155 @@
+<!-- Hero Section Spectaculaire -->
+<div class="relative py-32 lg:py-48 overflow-hidden flex items-center justify-center min-h-[70vh]">
+  <!-- Background Parallax -->
+  <div class="absolute inset-0 bg-[url('/assets/images/ecole-entree.png')] bg-cover bg-center bg-fixed scale-105"></div>
+  <!-- Overlay Gradient pour lisibilité -->
+  <div class="absolute inset-0 bg-gradient-to-b from-primary/95 via-primary/80 to-primary"></div>
+  
+  <div class="container-custom relative z-10">
+    <div class="text-center max-w-4xl mx-auto mt-10">
+      <div class="inline-block mb-6 px-5 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-lg">
+        <span class="text-accent font-bold tracking-[0.2em] uppercase text-sm">Notre Identité</span>
+      </div>
+      <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-8 leading-tight drop-shadow-2xl">
+        À propos de <br class="hidden md:block"/> <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-white">l'association</span>
+      </h1>
+      <p class="text-xl md:text-2xl text-white/90 font-light max-w-2xl mx-auto leading-relaxed">
+        Découvrez notre histoire, notre vision et la mission qui nous anime chaque jour pour fédérer nos anciens élèves.
+      </p>
+    </div>
+  </div>
+  
+  <!-- Decorative Bottom Wave -->
+  <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none rotate-180">
+    <svg class="relative block w-full h-[50px] md:h-[100px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="fill-white"></path>
+    </svg>
+  </div>
+</div>
+
+<!-- Section Historique avec Layout Asymétrique -->
+<div class="py-24 bg-white relative">
+  <div class="container-custom">
+    <div class="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
+      
+      <!-- Texte Historique -->
+      <div class="lg:w-1/2 relative z-10">
+        <div class="absolute -left-8 top-0 w-24 h-24 bg-accent/10 rounded-full blur-2xl"></div>
+        <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-secondary text-primary font-medium text-sm mb-8 border border-borderLight shadow-sm">
+          <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
+          </span>
+          Nos Racines
+        </div>
+        
+        <h2 class="text-4xl md:text-5xl font-extrabold text-primary mb-8 leading-tight">
+          Notre <span class="relative whitespace-nowrap">
+            <span class="relative z-10">Historique</span>
+            <span class="absolute -bottom-2 left-0 w-full h-4 bg-accent/30 -rotate-2"></span>
+          </span>
+        </h2>
+        
+        <div class="prose prose-xl text-textSecondary relative">
+          <div class="absolute -left-6 top-2 bottom-0 w-1 bg-gradient-to-b from-accent to-transparent rounded-full"></div>
+          <p class="leading-relaxed mb-6 font-light">
+            <span class="text-7xl text-primary float-left mr-4 mt-2 font-serif font-bold leading-none">L'</span>Association des Anciens Élèves d'Elhadj Mondiaye Thiaw est née de la volonté d'un groupe d'amis, anciens camarades de classe, de préserver les liens fraternels tissés sur les bancs de l'école.
+          </p>
+          <p class="leading-relaxed font-light">
+            Créée il y a plusieurs années, elle s'est rapidement structurée pour devenir une organisation professionnelle, solidaire et reconnue. D'un simple groupe de retrouvailles, nous sommes passés à une véritable plateforme d'entraide et de développement.
+          </p>
+        </div>
+
+        <!-- Citation Premium -->
+        <div class="mt-12 p-10 bg-gradient-to-br from-primary to-[#3a3059] rounded-2xl shadow-2xl relative overflow-hidden group">
+          <div class="absolute top-0 right-0 p-4 opacity-10 transform translate-x-4 -translate-y-4 group-hover:scale-110 transition-transform duration-500">
+            <svg class="w-32 h-32 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+          </div>
+          <p class="text-white text-xl md:text-2xl font-serif italic relative z-10 leading-snug">
+            "Une communauté unie par le passé, tournée vers l'avenir."
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Carrousel Parallax -->
+      <div class="lg:w-1/2 relative group w-full perspective-1000 mt-12 lg:mt-0">
+        <div class="absolute -inset-4 bg-gradient-to-tr from-accent via-primary to-secondary rounded-[3rem] transform rotate-3 scale-105 opacity-30 blur-2xl group-hover:opacity-50 transition-opacity duration-700"></div>
+        
+        <div class="relative rounded-[3rem] shadow-2xl w-full h-[500px] md:h-[600px] border-[12px] border-white z-10 overflow-hidden bg-secondary transform transition-transform duration-700 group-hover:-translate-y-2">
+          @for (img of images; track img; let i = $index) {
+            <div 
+              class="absolute inset-0 bg-cover bg-center bg-fixed transition-all duration-1000 ease-in-out scale-105 group-hover:scale-110"
+              [class.opacity-100]="currentImageIndex() === i"
+              [class.opacity-0]="currentImageIndex() !== i"
+              [style.background-image]="'url(' + img + ')'">
+            </div>
+          }
+          <!-- Overlay de luxe -->
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-80"></div>
+        </div>
+        
+        <!-- Badge Flottant -->
+        <div class="absolute -bottom-8 md:bottom-12 md:-left-12 z-20 bg-white p-5 rounded-2xl shadow-2xl flex items-center gap-5 transition-transform duration-500 group-hover:-translate-y-4 right-8 md:right-auto">
+          <div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center text-white shadow-inner">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          </div>
+          <div>
+            <p class="text-sm text-textSecondary font-medium uppercase tracking-wider">Depuis</p>
+            <p class="text-xl font-extrabold text-primary">Plusieurs années</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Section Piliers avec Design "Glassmorphism" & Grille Premium -->
+<div class="py-24 relative overflow-hidden bg-[#F8F7FC]">
+  <div class="absolute top-0 right-0 w-1/2 h-full bg-primary/5 rounded-l-[100px]"></div>
+  <div class="absolute bottom-0 left-0 w-64 h-64 bg-accent/10 rounded-full blur-3xl"></div>
+
+  <div class="container-custom relative z-10">
+    <div class="text-center mb-20">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-primary mb-6">Nos Piliers Fondamentaux</h2>
+      <p class="text-xl text-textSecondary max-w-3xl mx-auto font-light">
+        Trois axes majeurs guident toutes nos actions et initiatives au quotidien pour bâtir un réseau puissant.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-12 relative">
+      
+      <!-- Card 1 -->
+      <div class="bg-white rounded-[2rem] p-10 shadow-xl hover:shadow-2xl hover:-translate-y-4 transition-all duration-500 group border border-borderLight/50">
+        <div class="w-20 h-20 bg-primary/5 rounded-[1.5rem] flex items-center justify-center mb-8 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-500 shadow-sm">
+          <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+        </div>
+        <h3 class="text-3xl font-bold text-primary mb-5 group-hover:text-accent transition-colors">Notre Vision</h3>
+        <p class="text-textSecondary text-lg leading-relaxed font-light">Construire un réseau durable, fort et solidaire entre tous les anciens élèves, où chaque génération apporte son soutien à l'autre pour un développement harmonieux.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-[2rem] p-10 shadow-xl hover:shadow-2xl hover:-translate-y-4 transition-all duration-500 group border border-borderLight/50 lg:mt-12">
+        <div class="w-20 h-20 bg-primary/5 rounded-[1.5rem] flex items-center justify-center mb-8 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-500 shadow-sm">
+          <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+        </div>
+        <h3 class="text-3xl font-bold text-primary mb-5 group-hover:text-accent transition-colors">Notre Mission</h3>
+        <p class="text-textSecondary text-lg leading-relaxed font-light">Favoriser la solidarité, le partage des connaissances, et le développement socio-économique de nos membres à travers un réseau d'entraide actif.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-[2rem] p-10 shadow-xl hover:shadow-2xl hover:-translate-y-4 transition-all duration-500 group border border-borderLight/50 lg:mt-24">
+        <div class="w-20 h-20 bg-primary/5 rounded-[1.5rem] flex items-center justify-center mb-8 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-500 shadow-sm">
+          <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+        </div>
+        <h3 class="text-3xl font-bold text-primary mb-6 group-hover:text-accent transition-colors">Nos Objectifs</h3>
+        <ul class="space-y-5 text-lg font-light text-textSecondary">
+          <li class="flex items-center gap-4"><div class="w-3 h-3 rounded-full bg-accent/30 flex items-center justify-center"><div class="w-1.5 h-1.5 rounded-full bg-accent"></div></div> Renforcer les liens</li>
+          <li class="flex items-center gap-4"><div class="w-3 h-3 rounded-full bg-accent/30 flex items-center justify-center"><div class="w-1.5 h-1.5 rounded-full bg-accent"></div></div> Développer l'entraide</li>
+          <li class="flex items-center gap-4"><div class="w-3 h-3 rounded-full bg-accent/30 flex items-center justify-center"><div class="w-1.5 h-1.5 rounded-full bg-accent"></div></div> Valoriser les talents</li>
+          <li class="flex items-center gap-4"><div class="w-3 h-3 rounded-full bg-accent/30 flex items-center justify-center"><div class="w-1.5 h-1.5 rounded-full bg-accent"></div></div> Créer des opportunités</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>

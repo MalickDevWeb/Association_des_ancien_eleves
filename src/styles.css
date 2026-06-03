@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #4A3F6B;
+  --secondary: #F8F7FC;
+  --accent: #8D7AB8;
+  --background: #FFFFFF;
+  --text-main: #242424;
+  --text-secondary: #64606E;
+  --border-light: #ECE8F5;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-main);
+  font-family: 'Inter', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Masquer la barre de défilement pour Chrome, Safari et Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-opacity-90 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border-2 border-accent text-primary px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent;
+  }
+
+  .card {
+    @apply bg-white border border-borderLight rounded-[16px] shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lg overflow-hidden;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-primary mb-8 text-center;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12;
+  }
+}

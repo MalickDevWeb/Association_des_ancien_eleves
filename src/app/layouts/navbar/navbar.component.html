@@ -1,0 +1,60 @@
+<nav class="bg-white/90 backdrop-blur-md fixed w-full z-50 border-b border-borderLight shadow-sm top-0 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-[90px]">
+      <div class="flex items-center">
+        <a routerLink="/accueil" class="flex-shrink-0 flex items-center gap-3">
+          <img src="assets/images/logo.png" alt="Logo AEMT" class="h-[85px] w-auto object-contain mix-blend-multiply -ml-2">
+          <span class="font-bold text-lg text-primary hidden sm:block">Anciens Élèves EMT</span>
+        </a>
+      </div>
+
+      <!-- Desktop menu -->
+      <div class="hidden lg:flex lg:items-center lg:space-x-4">
+        <a routerLink="/accueil" routerLinkActive="text-primary font-semibold" [routerLinkActiveOptions]="{exact: true}" class="text-textSecondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Accueil</a>
+        <a routerLink="/a-propos" routerLinkActive="text-primary font-semibold" class="text-textSecondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">À propos</a>
+        <a routerLink="/organisation" routerLinkActive="text-primary font-semibold" class="text-textSecondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Organisation</a>
+        <a routerLink="/membres" routerLinkActive="text-primary font-semibold" class="text-textSecondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Membres</a>
+        <a routerLink="/talents" routerLinkActive="text-primary font-semibold" class="text-textSecondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Talents</a>
+        <a routerLink="/activites" routerLinkActive="text-primary font-semibold" class="text-textSecondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Activités</a>
+        <a routerLink="/entraide" routerLinkActive="text-primary font-semibold" class="text-textSecondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Entraide</a>
+        <a routerLink="/galerie" routerLinkActive="text-primary font-semibold" class="text-textSecondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Galerie</a>
+        <a routerLink="/temoignages" routerLinkActive="text-primary font-semibold" class="text-textSecondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors">Témoignages</a>
+        <a routerLink="/contact" class="btn-primary ml-2 py-2 px-4 text-sm">Contact</a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="flex items-center lg:hidden">
+        <button (click)="toggleMenu()" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-primary hover:text-white hover:bg-primary transition-colors focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          @if (!isMenuOpen()) {
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          } @else {
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          }
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  @if (isMenuOpen()) {
+    <div class="lg:hidden bg-white border-t border-borderLight shadow-lg absolute w-full left-0" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a (click)="closeMenu()" routerLink="/accueil" routerLinkActive="bg-secondary text-primary font-semibold" [routerLinkActiveOptions]="{exact: true}" class="text-textSecondary hover:text-primary hover:bg-secondary block px-3 py-2 rounded-md text-base transition-colors">Accueil</a>
+        <a (click)="closeMenu()" routerLink="/a-propos" routerLinkActive="bg-secondary text-primary font-semibold" class="text-textSecondary hover:text-primary hover:bg-secondary block px-3 py-2 rounded-md text-base transition-colors">À propos</a>
+        <a (click)="closeMenu()" routerLink="/organisation" routerLinkActive="bg-secondary text-primary font-semibold" class="text-textSecondary hover:text-primary hover:bg-secondary block px-3 py-2 rounded-md text-base transition-colors">Organisation</a>
+        <a (click)="closeMenu()" routerLink="/membres" routerLinkActive="bg-secondary text-primary font-semibold" class="text-textSecondary hover:text-primary hover:bg-secondary block px-3 py-2 rounded-md text-base transition-colors">Membres</a>
+        <a (click)="closeMenu()" routerLink="/talents" routerLinkActive="bg-secondary text-primary font-semibold" class="text-textSecondary hover:text-primary hover:bg-secondary block px-3 py-2 rounded-md text-base transition-colors">Talents</a>
+        <a (click)="closeMenu()" routerLink="/activites" routerLinkActive="bg-secondary text-primary font-semibold" class="text-textSecondary hover:text-primary hover:bg-secondary block px-3 py-2 rounded-md text-base transition-colors">Activités</a>
+        <a (click)="closeMenu()" routerLink="/entraide" routerLinkActive="bg-secondary text-primary font-semibold" class="text-textSecondary hover:text-primary hover:bg-secondary block px-3 py-2 rounded-md text-base transition-colors">Entraide</a>
+        <a (click)="closeMenu()" routerLink="/galerie" routerLinkActive="bg-secondary text-primary font-semibold" class="text-textSecondary hover:text-primary hover:bg-secondary block px-3 py-2 rounded-md text-base transition-colors">Galerie</a>
+        <a (click)="closeMenu()" routerLink="/temoignages" routerLinkActive="bg-secondary text-primary font-semibold" class="text-textSecondary hover:text-primary hover:bg-secondary block px-3 py-2 rounded-md text-base transition-colors">Témoignages</a>
+        <a (click)="closeMenu()" routerLink="/contact" class="block w-full text-center btn-primary mt-4">Contact</a>
+      </div>
+    </div>
+  }
+</nav>

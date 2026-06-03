@@ -1,0 +1,21 @@
+<div class="bg-secondary py-12">
+  <div class="container-custom">
+    <h1 class="text-4xl md:text-5xl font-bold text-primary text-center mb-6">Galerie</h1>
+    <p class="text-xl text-textSecondary text-center max-w-3xl mx-auto">
+      Revivez les moments forts de notre association en images.
+    </p>
+  </div>
+</div>
+
+<div class="py-16 bg-white">
+  <div class="container-custom">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      @for (image of images(); track image) {
+        <div class="card h-64 overflow-hidden group cursor-pointer">
+          <img [src]="image" alt="Galerie" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-colors duration-300"></div>
+        </div>
+      }
+    </div>
+  </div>
+</div>
